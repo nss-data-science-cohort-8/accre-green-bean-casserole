@@ -1,4 +1,5 @@
 import pandas as pd
+from tqdm import tqdm
 
 # slurm log csv conversion
 def log_to_df(log):
