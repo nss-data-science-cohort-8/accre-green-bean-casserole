@@ -1,3 +1,4 @@
+from ftplib import all_errors
 import pandas as pd
 from tqdm import tqdm
 
@@ -25,7 +26,7 @@ def df_to_datelist(df1):
 
 
 
-def count_jobs_before_interr(all_errors_func = all_errors, jobs_func = jobs, typeTime = 'h', countTime = 1, on = 'END'):
+def count_jobs_before_interr(all_errors_func , jobs_func, typeTime = 'h', countTime = 1, on = 'END'):
     """
     Calculates the number of jobs occurring within a specified time window 
     relative to each error timestamp, based on the relationship specified 
